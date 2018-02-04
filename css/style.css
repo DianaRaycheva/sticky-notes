@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Phyton;
+    src: url(fonts/phyton-script.ttf);
+}
+
+body{
+	font-family: Helvetica, sans-serif;
+	background-image: url("../img/background-1.jpg");
+}
+
+#addNoteBtn{
+	font-size:1em;
+	padding:10px;
+	font-family: Helvetica, sans-serif;
+	border-radius:5px;
+	background: #ea97ed; /* Old browsers */
+	background: -moz-linear-gradient(top, #ea97ed 0%, #bc0d7c 50%, #bc0d7c 51%, #ea97ed 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ea97ed 0%,#bc0d7c 50%,#bc0d7c 51%,#ea97ed 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ea97ed 0%,#bc0d7c 50%,#bc0d7c 51%,#ea97ed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea97ed', endColorstr='#ea97ed',GradientType=0 ); /* IE6-9 */
+	color:#fff;
+	border:0;
+}
+
+#addNoteBtn:hover{
+	background: #960680; /* Old browsers */
+	background: -moz-linear-gradient(top, #960680 0%, #bc0d7c 50%, #bc0d7c 51%, #960680 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #960680 0%,#bc0d7c 50%,#bc0d7c 51%,#960680 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #960680 0%,#bc0d7c 50%,#bc0d7c 51%,#960680 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#960680', endColorstr='#960680',GradientType=0 ); /* IE6-9 */
+}
+
+.note{
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+	min-height:250px;
+	min-width:200px;
+	width: 18em;
+	height:20em;
+	padding:10px;
+	position:absolute;
+}
+
+.note:hover .close, .note:hover .color{
+	display:block;
+}
+
+.close, .color{
+	/*display: none;*/
+    position: absolute;
+    color: rgba(0,0,0,.2);
+}
+.close{
+	right: 3.6em;
+    top: 1.8em;
+}
+.color{
+	background: transparent;
+    border: none;
+    font-size: 14px;
+    padding: 5px;
+    width: initial;
+    right: 5.5em;
+    top: 2.2em;
+    transform: skew(187deg,176deg);
+}
+
+.close:hover, .color:hover{
+	color: rgba(0,0,0,.5);
+}
+
+.timestamp{
+	position: absolute;
+    left: 18px;
+    bottom: 20px;
+    right: 0;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    transform: skew(190deg,174deg);
+    background-color: transparent;
+    color: rgba(0,0,0,0.3);
+    padding: 2px 4px;
+    text-align: center;
+}
+.edit{
+	position: absolute;
+    top: 5em;
+    left: 3em;
+   	overflow-y: auto;
+    overflow-x: hidden;
+    height: 60%;
+    width: 66%;
+    max-height: 60%;
+    max-width: 66%;
+    transform: skew(187deg,176deg);
+}
+.edit:focus, .color:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
